@@ -14,12 +14,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "{{password}}",
+							"value": "{{secret}}",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "{{username}}",
+							"value": "{{token}}",
 							"type": "string"
 						}
 					]
@@ -126,7 +126,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://{{domain}}/learn/api/public/v1/users/_5_1",
+					"raw": "https://{{domain}}/learn/api/public/v1/users/{{userId}}",
 					"protocol": "https",
 					"host": [
 						"{{domain}}"
@@ -168,7 +168,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://{{domain}}/learn/api/public/v1/users/_7_1",
+					"raw": "https://{{domain}}/learn/api/public/v1/users/{{userId}}",
 					"protocol": "https",
 					"host": [
 						"{{domain}}"
@@ -202,7 +202,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"userName\": \"cdarwin\",\n\"password\": \"cdarwin\",\n\"name\": {\n     \"given\": \"Charles\",\n     \"family\": \"Darwin\"\n  }\n}",
+					"raw": "{\n\"userName\": \"dummy-username\",\n\"password\": \"dummy-pwd\",\n\"name\": {\n     \"given\": \"dummy-firstname\",\n     \"family\": \"dummy-lastname\"\n  }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -243,7 +243,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"systemRoleIds\": [\n    \"Syetem\"\n  ],\n  \"name\": {\n    \"given\": \"Sha\",\n    \"family\": \"Yasin\"\n  }\n}",
+					"raw": "{\n  \"systemRoleIds\": [\n    \"roll\"\n  ],\n  \"name\": {\n    \"given\": \"dummy-firstname\",\n    \"family\": \"dummy-lastname\"\n  }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -251,7 +251,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://{{domain}}/learn/api/public/v1/users/_6_1",
+					"raw": "https://{{domain}}/learn/api/public/v1/users/{{userId}}",
 					"protocol": "https",
 					"host": [
 						"{{domain}}"
