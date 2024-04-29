@@ -268,5 +268,32 @@
 			},
 			"response": []
 		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "$APP_KEY",
+			"type": "string"
+		},
+		{
+			"key": "secret",
+			"value": "$APP_SECRET",
+			"type": "string"
+		},
+		{
+			"key": "accessToken",
+			"value": "$ACCESS_TOKEN",
+			"type": "string"
+		},
+		{
+			"key": "domain",
+			"value": "$LEARN_DOMAIN",
+			"type": "string"
+		},
+		{
+			"key": "userId",
+			"value": "$USER_ID",
+			"type": "string"
+		},
 	]
 }
